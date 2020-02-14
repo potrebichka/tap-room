@@ -1,6 +1,6 @@
-# MiNina Agency
+# Tap Room
 
-#### _React: Agency Wensite, Last Update 02/13/2020_
+#### _React: Agency Wensite, Last Update 02/14/2020_
 
 ## Description
 Create a company website incdules an "about us" and "our team" pages with photos and brief information.
@@ -47,8 +47,6 @@ $ npm run start
 - No known bugs at this time
 
 ## Support and contact details
-Misaki Koonce: misaki.koonce@gmail.com
-
 Nina Potrebich: potrebich@gmail.com
 
 ## Technologies Used
