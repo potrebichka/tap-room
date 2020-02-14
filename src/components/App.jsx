@@ -4,19 +4,30 @@ import Header from './Header';
 import Main from './Main';
 import NotFound from './NotFound';
 import KegList from './KegList';
+import NewKeg from './NewKeg';
+import wood_background from '../assets/images/wood_background.jpg';
 
 
 const App = () => {
-    return (
-        <div>
-            <Header />
-            <Switch>
-                <Route exact path='/' component={Main} />
-                <Route path='/kegs-list' component={KegList} />
-                <Route component={NotFound} />
-            </Switch>
-        </div>
-    )
-}
+  return (
+    <div className="page_background">
+      <style jsx>{`
+                .page_background {
+                    background: url(${wood_background}) no-repeat center center fixed;
+                    min-height: 100vh;
+                    background-size: cover;
+                    overflow: hidden;
+                }
+            `}</style>
+      <Header />
+      <Switch>
+        <Route exact path='/' component={Main} />
+        <Route path='/kegs-list' component={KegList} />
+        <Route path='/newkeg' component={NewKeg} />
+        <Route component={NotFound} />
+      </Switch>
+    </div>
+  );
+};
 
-export default App
+export default App;
