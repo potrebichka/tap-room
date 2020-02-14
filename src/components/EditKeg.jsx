@@ -31,27 +31,27 @@ const EditKeg = (props) => {
         <Form>
             <FormGroup>
                 <ControlLabel>Enter a name of beer:</ControlLabel>
-                <FormControl type="text">{props.name}</FormControl>
+                <FormControl type="text" placeholder={props.name} defaultValue={props.name}></FormControl>
             </FormGroup>
 
             <FormGroup>
                 <ControlLabel>Enter name of brand:</ControlLabel>
-                <FormControl type="text">{props.brand}</FormControl>
+                <FormControl type="text" placeholder={props.brand} defaultValue={props.brand}></FormControl>
             </FormGroup>
 
             <FormGroup>
                 <ControlLabel>Enter a price:</ControlLabel>
-                <FormControl type="number" step="0.01">{props.price}</FormControl>
+                <FormControl type="number" step="0.01" placeholder={props.price} defaultValue={props.price}></FormControl>
             </FormGroup>
 
             <FormGroup>
                 <ControlLabel>Enter an alcohol content:</ControlLabel>
-                <FormControl type="number" step="0.01">{props.alcoholContent}</FormControl>
+                <FormControl type="number" step="0.01" placeholder={props.alcoholContent} defaultValue={props.alcoholContent}></FormControl>
             </FormGroup>
 
             <FormGroup>
                 <ControlLabel>Enter an IBU (optional):</ControlLabel>
-                <FormControl type="number">{props.ibu}</FormControl>
+                <FormControl type="number" placeholder={props.ibu} defaultValue={props.ibu}></FormControl>
             </FormGroup>
 
             <Button type="submit" className="btn btn-primary btn-custom"><Link style={linkStyling} to="/list">Submit</Link></Button>

@@ -24,6 +24,7 @@ class Keg extends React.Component {
               margin: 10px;
               text-align: center;
           }
+
         `}</style>
 
         <h3>{this.props.name}</h3>
@@ -37,10 +38,10 @@ class Keg extends React.Component {
           <p>Pints left: {this.state.pints <= 0 ? 0 : this.state.pints}</p>
 
           <Button className="btn btn-success" onClick={() => this.setState({pints: this.state.pints-1})
-  }>Sold one pint</Button><br/>
+  }>Sold one pint</Button><br/><br/>
 
           <Checkbox onChange={() => this.setState({showEdit: !this.state.showEdit})}>Edit info</Checkbox>
-          {this.state.showEdit ? <EditKeg /> : null}
+          {this.state.showEdit ? <EditKeg name={this.props.name} brand={this.props.brand} price={this.props.price} alcoholContent={this.props.alcoholContent} ibu={this.props.ibu}/> : null}
 
         </div> 
         : null}
