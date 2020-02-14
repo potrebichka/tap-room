@@ -17,7 +17,7 @@ const KegList = () => {
     // }
     return (
         <div style={kegListStyling}>
-            <h1>List of availbale kegs:</h1>
+            <h1>List of available kegs:</h1>
             <Keg name="Gold" brand="Saint Archer Brewing Company" price={7.00} alcoholContent={4.2}/>
             <Keg name="Insignia" brand="Mystic Brewery" price={8.50} alcoholContent={5.0}/>
             <Keg name="Easy Jack" brand="Firestone Walker Brewing Company" price={7.50} alcoholContent={4.0} ibu={47}/>

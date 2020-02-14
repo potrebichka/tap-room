@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Header from './Header';
 import Main from './Main';
 import NotFound from './NotFound';
 import KegList from './KegList';
@@ -8,10 +9,10 @@ import KegList from './KegList';
 const App = () => {
     return (
         <div>
-            {/* <Header /> */}
+            <Header />
             <Switch>
                 <Route exact path='/' component={Main} />
-                <Route path='/keg-list' component={KegList} />
+                <Route path='/kegs-list' component={KegList} />
                 <Route component={NotFound} />
             </Switch>
         </div>
