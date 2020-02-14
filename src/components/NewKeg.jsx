@@ -1,7 +1,12 @@
 import React from 'react';
 import {Form, FormGroup, ControlLabel, FormControl, FieldGroup, Button, CheckBox } from 'react-bootstrap';
+import {Link, withRouter} from 'react-router-dom';
 
 const NewKeg = () => {
+    const linkStyling = {
+        color: "white",
+        fontSize: "25px"
+    }
   return (
     <div>
       <style jsx>{`
@@ -48,7 +53,7 @@ const NewKeg = () => {
                 <FormControl type="number" placeholder="" />
             </FormGroup>
 
-            <Button type="submit" className="btn btn-primary btn-custom">Submit</Button>
+            <Button type="submit" className="btn btn-primary btn-custom"><Link style={linkStyling} to="/list">Submit</Link></Button>
         </Form>
       </div>
 

@@ -1,8 +1,13 @@
 import React from 'react';
 import {Form, FormGroup, ControlLabel, FormControl, FieldGroup, Button, CheckBox } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import {Link} from "react-router-dom";
 
 const EditKeg = (props) => {
+    const linkStyling = {
+        color: "white",
+        fontSize: "25px"
+    }
   return (
     <div>
       <style jsx>{`
@@ -49,7 +54,7 @@ const EditKeg = (props) => {
                 <FormControl type="number">{props.ibu}</FormControl>
             </FormGroup>
 
-            <Button type="submit" className="btn btn-primary btn-custom">Submit</Button>
+            <Button type="submit" className="btn btn-primary btn-custom"><Link style={linkStyling} to="/list">Submit</Link></Button>
         </Form>
       </div>
 
