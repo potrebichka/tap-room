@@ -37,8 +37,8 @@ const Header = () => {
       <nav style={nav}>
         <Link to='/' style={tapRoomName}>Fort Epicodus Tap Room</Link>
         <Link to='/' style={navItem}>HOME</Link>
-        <Link to='/kegs-list' style={navItem}>KEGS LIST</Link>
-        <Link to='/newkeg' style={navItem}>Add a New Keg</Link>
+        <Link to='/list' style={navItem}>KEGS LIST</Link>
+        <Link to='/new' style={navItem}>Add a New Keg</Link>
       </nav>
     </header>
   );

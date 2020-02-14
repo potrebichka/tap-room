@@ -5,6 +5,7 @@ import Main from './Main';
 import NotFound from './NotFound';
 import KegList from './KegList';
 import NewKeg from './NewKeg';
+import EditKeg from './EditKeg';
 import wood_background from '../assets/images/wood_background.jpg';
 
 
@@ -22,8 +23,9 @@ const App = () => {
       <Header />
       <Switch>
         <Route exact path='/' component={Main} />
-        <Route path='/kegs-list' component={KegList} />
-        <Route path='/newkeg' component={NewKeg} />
+        <Route path='/list' component={KegList} />
+        <Route path='/new' component={NewKeg} />
+        <Route path='/edit' component={EditKeg} />
         <Route component={NotFound} />
       </Switch>
     </div>
