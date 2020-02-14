@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import EditKeg from './EditKeg';
-import {Button} from 'react-bootstrap';
+import {Button, Checkbox} from 'react-bootstrap';
 
 class Keg extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      pints: 124
+      pints: 124,
+      showEdit: false
     };
   }
   
@@ -38,7 +39,8 @@ class Keg extends React.Component {
           <Button className="btn btn-success" onClick={() => this.setState({pints: this.state.pints-1})
   }>Sold one pint</Button><br/>
 
-          <EditKeg />
+          <Checkbox onChange={() => this.setState({showEdit: !this.state.showEdit})}>Edit info</Checkbox>
+          {this.state.showEdit ? <EditKeg /> : null}
 
         </div> 
         : null}
