@@ -21,9 +21,13 @@ const Keg = (props) => {
       <p>${props.price}</p>
       <p>{props.alcoholContent}% ABV</p>
       <p>{props.ibu ? `${props.ibu} IBU`: 'NO IBU'}</p>
-      <p>Pints left: {props.pints <= 0 ? 0 : props.pints}</p>
-      <Button className="btn btn-success">Sold one pint</Button><br/>
-      <Link to="/edit" component ={EditKeg}>Edit</Link>
+      {props.employee ? 
+      <div>
+        <p>Pints left: {props.pints <= 0 ? 0 : props.pints}</p>
+        <Button className="btn btn-success">Sold one pint</Button><br/>
+        <Link to="/edit" component ={EditKeg}>Edit</Link>
+      </div> 
+      : null}
     </div>
   );
 };
@@ -34,7 +38,8 @@ Keg.propTypes = {
   price: PropTypes.number.isRequired,
   alcoholContent: PropTypes.number.isRequired,
   ibu: PropTypes.number,
-  pints: PropTypes.number.isRequired
+  pints: PropTypes.number.isRequired,
+  employee: PropTypes.bool
 };
 
 export default Keg;

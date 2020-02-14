@@ -1,6 +1,6 @@
 import React from 'react';
 import {Form, FormGroup, ControlLabel, FormControl, FieldGroup, Button, CheckBox } from 'react-bootstrap';
-import {Link, withRouter} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const NewKeg = () => {
     const linkStyling = {

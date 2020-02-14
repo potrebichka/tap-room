@@ -6,6 +6,7 @@ import NotFound from './NotFound';
 import KegList from './KegList';
 import NewKeg from './NewKeg';
 import EditKeg from './EditKeg';
+import Account from './Account';
 import wood_background from '../assets/images/wood_background.jpg';
 
 
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='/list' component={KegList} />
         <Route path='/new' component={NewKeg} />
         <Route path='/edit' component={EditKeg} />
+        <Route path='/account' component={Account} />
         <Route component={NotFound} />
       </Switch>
     </div>
