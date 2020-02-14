@@ -12,9 +12,12 @@ App
 │       
 └── Switch
     └── Main
-    └── Keg List
-    |        └── Keg
-    |            └── Edit Keg
+    └── Menu
+    |     └── Keg List
+    |     |        └── Keg
+    └── Employee        
+    |    └── Add Keg 
+    |    └── Edit Keg
     └── Not Found
 ```
 
