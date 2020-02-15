@@ -54,7 +54,7 @@ const EditKeg = (props) => {
                 <FormControl type="number" placeholder={props.ibu} defaultValue={props.ibu}></FormControl>
             </FormGroup>
 
-            <Button type="submit" className="btn btn-primary btn-custom"><Link style={linkStyling} to="/list">Submit</Link></Button>
+            <Button type="submit" className="btn btn-primary btn-custom">Submit</Button>
         </Form>
       </div>
 

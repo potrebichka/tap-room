@@ -2,6 +2,7 @@ import React from 'react';
 // import backgroundImage from '../assets/images/kegList-background.jpeg'
 import Keg from './Keg';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 const KegList = (props) => {
   return (
@@ -23,8 +24,14 @@ const KegList = (props) => {
                     flex-wrap: wrap;
                     justify-content: space-between;
                 }
+                .text-box a {
+                  font-size: 30px;
+                }
             `}</style>
       <div className="text-box">
+        {props.employee ? <Link to="/new">Add a new keg</Link> : null}
+        <br/>
+        <br/>
         <h1>List of available kegs:</h1>
         <div className="kegs-list">
           <Keg name="Gold" brand="Saint Archer Brewing Company" price={7.00} alcoholContent={4.2} employee={props.employee}/>
