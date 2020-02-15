@@ -1,13 +1,13 @@
 import React from 'react';
 import {Form, FormGroup, ControlLabel, FormControl, FieldGroup, Button, CheckBox } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 const EditKeg = (props) => {
-    const linkStyling = {
-        color: "white",
-        fontSize: "25px"
-    }
+  const linkStyling = {
+    color: 'white',
+    fontSize: '25px'
+  };
   return (
     <div>
       <style jsx>{`
@@ -29,32 +29,32 @@ const EditKeg = (props) => {
       <div className="text-box">
         <h1>Edit keg:</h1>
         <Form>
-            <FormGroup>
-                <ControlLabel>Enter a name of beer:</ControlLabel>
-                <FormControl type="text" placeholder={props.name} defaultValue={props.name}></FormControl>
-            </FormGroup>
+          <FormGroup>
+            <ControlLabel>Enter a name of beer:</ControlLabel>
+            <FormControl type="text" placeholder={props.name} defaultValue={props.name}></FormControl>
+          </FormGroup>
 
-            <FormGroup>
-                <ControlLabel>Enter name of brand:</ControlLabel>
-                <FormControl type="text" placeholder={props.brand} defaultValue={props.brand}></FormControl>
-            </FormGroup>
+          <FormGroup>
+            <ControlLabel>Enter name of brand:</ControlLabel>
+            <FormControl type="text" placeholder={props.brand} defaultValue={props.brand}></FormControl>
+          </FormGroup>
 
-            <FormGroup>
-                <ControlLabel>Enter a price:</ControlLabel>
-                <FormControl type="number" step="0.01" placeholder={props.price} defaultValue={props.price}></FormControl>
-            </FormGroup>
+          <FormGroup>
+            <ControlLabel>Enter a price:</ControlLabel>
+            <FormControl type="number" step="0.01" placeholder={props.price} defaultValue={props.price}></FormControl>
+          </FormGroup>
 
-            <FormGroup>
-                <ControlLabel>Enter an alcohol content:</ControlLabel>
-                <FormControl type="number" step="0.01" placeholder={props.alcoholContent} defaultValue={props.alcoholContent}></FormControl>
-            </FormGroup>
+          <FormGroup>
+            <ControlLabel>Enter an alcohol content:</ControlLabel>
+            <FormControl type="number" step="0.01" placeholder={props.alcoholContent} defaultValue={props.alcoholContent}></FormControl>
+          </FormGroup>
 
-            <FormGroup>
-                <ControlLabel>Enter an IBU (optional):</ControlLabel>
-                <FormControl type="number" placeholder={props.ibu} defaultValue={props.ibu}></FormControl>
-            </FormGroup>
+          <FormGroup>
+            <ControlLabel>Enter an IBU (optional):</ControlLabel>
+            <FormControl type="number" placeholder={props.ibu} defaultValue={props.ibu}></FormControl>
+          </FormGroup>
 
-            <Button type="submit" className="btn btn-primary btn-custom">Submit</Button>
+          <Button type="submit" className="btn btn-primary btn-custom">Submit</Button>
         </Form>
       </div>
 
@@ -63,11 +63,11 @@ const EditKeg = (props) => {
 };
 
 EditKeg.propTypes = {
-    name: PropTypes.string.isRequired,
-    brand: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    alcoholContent: PropTypes.number.isRequired,
-    ibu: PropTypes.number
-  };
+  name: PropTypes.string.isRequired,
+  brand: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  alcoholContent: PropTypes.number.isRequired,
+  ibu: PropTypes.number
+};
 
 export default EditKeg;

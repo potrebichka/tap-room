@@ -3,10 +3,10 @@ import {Form, FormGroup, ControlLabel, FormControl, FieldGroup, Button, CheckBox
 import {Link} from 'react-router-dom';
 
 const NewKeg = () => {
-    const linkStyling = {
-        color: "white",
-        fontSize: "25px"
-    }
+  const linkStyling = {
+    color: 'white',
+    fontSize: '25px'
+  };
   return (
     <div>
       <style jsx>{`
@@ -28,32 +28,32 @@ const NewKeg = () => {
       <div className="text-box">
         <h1>Add a new keg:</h1>
         <Form>
-            <FormGroup>
-                <ControlLabel>Enter a name of beer:</ControlLabel>
-                <FormControl type="text" placeholder="" />
-            </FormGroup>
+          <FormGroup>
+            <ControlLabel>Enter a name of beer:</ControlLabel>
+            <FormControl type="text" placeholder="" />
+          </FormGroup>
 
-            <FormGroup>
-                <ControlLabel>Enter name of brand:</ControlLabel>
-                <FormControl type="text" placeholder="" />
-            </FormGroup>
+          <FormGroup>
+            <ControlLabel>Enter name of brand:</ControlLabel>
+            <FormControl type="text" placeholder="" />
+          </FormGroup>
 
-            <FormGroup>
-                <ControlLabel>Enter a price:</ControlLabel>
-                <FormControl type="number" step="0.01" placeholder="" />
-            </FormGroup>
+          <FormGroup>
+            <ControlLabel>Enter a price:</ControlLabel>
+            <FormControl type="number" step="0.01" placeholder="" />
+          </FormGroup>
 
-            <FormGroup>
-                <ControlLabel>Enter an alcohol content:</ControlLabel>
-                <FormControl type="number" step="0.01" placeholder="" />
-            </FormGroup>
+          <FormGroup>
+            <ControlLabel>Enter an alcohol content:</ControlLabel>
+            <FormControl type="number" step="0.01" placeholder="" />
+          </FormGroup>
 
-            <FormGroup>
-                <ControlLabel>Enter an IBU (optional):</ControlLabel>
-                <FormControl type="number" placeholder="" />
-            </FormGroup>
+          <FormGroup>
+            <ControlLabel>Enter an IBU (optional):</ControlLabel>
+            <FormControl type="number" placeholder="" />
+          </FormGroup>
 
-            <Button type="submit" className="btn btn-primary btn-custom"><Link style={linkStyling} to="/list">Submit</Link></Button>
+          <Button type="submit" className="btn btn-primary btn-custom"><Link style={linkStyling} to="/list">Submit</Link></Button>
         </Form>
       </div>
 

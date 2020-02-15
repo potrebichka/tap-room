@@ -3,13 +3,13 @@ import {Link} from 'react-router-dom';
 import KegList from './KegList';
 
 const Account = () => {
-    const linkStyling = {
-        color: "white",
-        fontSize: "25px"
-    }
-    return (
-        <div>
-            <style jsx>{`
+  const linkStyling = {
+    color: 'white',
+    fontSize: '25px'
+  };
+  return (
+    <div>
+      <style jsx>{`
                 .text-box {
                     background-color: rgba(0,0,0,0.7);
                     font-size: 25px;
@@ -21,11 +21,11 @@ const Account = () => {
                     max-width: 900px;
                 }
             `}</style>
-            <div className="text-box">
-                <KegList employee={true}/>
-            </div>
-        </div>
-    );
+      <div className="text-box">
+        <KegList employee={true}/>
+      </div>
+    </div>
+  );
 };
 
 export default Account;

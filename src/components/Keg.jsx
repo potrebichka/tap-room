@@ -34,22 +34,22 @@ class Keg extends React.Component {
         <p>{this.props.ibu ? `${this.props.ibu} IBU`: 'NO IBU'}</p>
 
         {this.props.employee ? 
-        <div>
-          <p>Pints left: {this.state.pints <= 0 ? 0 : this.state.pints}</p>
+          <div>
+            <p>Pints left: {this.state.pints <= 0 ? 0 : this.state.pints}</p>
 
-          <Button className="btn btn-success" onClick={() => this.setState({pints: this.state.pints-1})
-  }>Sold one pint</Button><br/><br/>
+            <Button className="btn btn-success" onClick={() => this.setState({pints: this.state.pints-1})
+            }>Sold one pint</Button><br/><br/>
 
-          <Checkbox onChange={() => this.setState({showEdit: !this.state.showEdit})}>Edit info</Checkbox>
-          {this.state.showEdit ? <EditKeg name={this.props.name} brand={this.props.brand} price={this.props.price} alcoholContent={this.props.alcoholContent} ibu={this.props.ibu}/> : null}
+            <Checkbox onChange={() => this.setState({showEdit: !this.state.showEdit})}>Edit info</Checkbox>
+            {this.state.showEdit ? <EditKeg name={this.props.name} brand={this.props.brand} price={this.props.price} alcoholContent={this.props.alcoholContent} ibu={this.props.ibu}/> : null}
 
-        </div> 
-        : null}
+          </div> 
+          : null}
 
       </div>
     );
   }
-};
+}
 
 Keg.propTypes = {
   name: PropTypes.string.isRequired,
