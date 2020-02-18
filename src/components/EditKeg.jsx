@@ -1,13 +1,8 @@
 import React from 'react';
 import {Form, FormGroup, ControlLabel, FormControl, FieldGroup, Button, CheckBox } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom';
 
 const EditKeg = (props) => {
-  const linkStyling = {
-    color: 'white',
-    fontSize: '25px'
-  };
   return (
     <div>
       <style jsx>{`
